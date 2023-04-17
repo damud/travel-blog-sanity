@@ -17,7 +17,10 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: rgb(var(--foreground-rgb));
+  font-family: 'Trebuchet MS', Arial, sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -25,3 +28,30 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* APP */
+.app-container {
+  background-color: rgb(145, 156, 143);
+}
+
+/* Navbar */
+
+nav.nav-container {
+background-color: whitesmoke;
+min-height: 100vh;
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+nav.nav-container .nav-item-container {
+  padding: 300px;
+}
+
+/* HomePage */
