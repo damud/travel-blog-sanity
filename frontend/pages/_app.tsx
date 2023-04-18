@@ -1,8 +1,8 @@
+import React from "react";
 import "../styles/globals.css"
-import type { AppProps } from "next/app"
 import Navbar from "../components/Navbar";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }) => {
   return (
   <div className="app-container">
     <Navbar />
