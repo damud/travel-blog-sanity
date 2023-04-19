@@ -1,6 +1,6 @@
-const Tag = () => {
+const Tag = ({ title }) => {
   return (
-    <div>Tag</div>
+    <div>{ title }</div>
   )
 }
 
