@@ -1,8 +1,8 @@
 {
-  "..\\node_modules\\@sanity\\client\\dist\\index.browser.js -> @sanity/eventsource": {
-    "id": "..\\node_modules\\@sanity\\client\\dist\\index.browser.js -> @sanity/eventsource",
+  "..\\node_modules\\next-sanity\\dist\\next-sanity.esm.js -> @sanity/groq-store": {
+    "id": "..\\node_modules\\next-sanity\\dist\\next-sanity.esm.js -> @sanity/groq-store",
     "files": [
-      "static/chunks/node_modules_sanity_eventsource_browser_js.js"
+      "static/chunks/node_modules_sanity_groq-store_dist_browser_groq-store_js.js"
     ]
   }
 }

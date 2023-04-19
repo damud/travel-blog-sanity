@@ -20,7 +20,7 @@ const Home = ({ posts }) => {
             <Link
                key={post._id}
                href="/">
-            <Card posts={post} 
+            <Card post={post} 
             />
             </Link>
           ))}
