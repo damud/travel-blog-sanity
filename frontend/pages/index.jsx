@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Card from "../components/Card"
+import Card from "../components/Card";
 import { getClient } from "../library/sanity-server";
 import groq from "groq";
 

@@ -32,6 +32,7 @@ a {
 
 /* APP */
 .app-container {
+  display: flex;
   background-color: rgb(145, 156, 143);
 }
 
@@ -51,3 +52,58 @@ nav.nav-container .nav-item-container {
 }
 
 /* HomePage */
+
+.card {
+  background-color: white;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: rgba(0,0,0,0.5) 0 6px 24px 0, rgba(0,0,0.08) 0, 0, 0, 1px;
+}
+
+.dashbord {
+  width: 100%;
+}
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+.tag-container .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5px 10px;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+}
+
+.tag-container .tag:nth-child() {
+  margin-left: 0 !important;
+}
+
+.card-container, .info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Images */
+
+.main-image, .post-image {
+  width: 100%;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
