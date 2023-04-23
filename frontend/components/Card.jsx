@@ -1,10 +1,14 @@
 import { urlFor } from "../library/sanity";
-import Tag from "./Tag";
+import Tag from "./Tag"
+import { forwardRef } from "react";
 
-const Card = ({ post }) => {
+
+const Card = forwardRef(({ onClick, href, post }, ref) => {
+  const { title, publishedAt, mainImage, username, authorImage, categories} = post
+
   return (
-    <div className="card-container">
-      <h2>{post.title}</h2>
+      <div className="card-container" href={href} onClick={onClick} ref={ref}>
+          <h2>{title}</h2>
       <p>Published on: {new Date(post.publishedAt).toDateString()}</p>
       <img
          className="main-image"
@@ -30,6 +34,6 @@ const Card = ({ post }) => {
       </div>
     </div>
   )
-}
+})
 
 export default Card
