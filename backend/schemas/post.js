@@ -4,7 +4,7 @@ export default {
   title: "Blog Post",
   fields: [
     {
-      name: "postedAT",
+      name: "postedAt",
       type: "geopoint",
       title: "Location",
     },

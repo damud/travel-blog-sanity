@@ -3,13 +3,15 @@ const Tag = ({ title }) => {
     let color;
     switch (title.toLowerCase()) {
         case "travel":
-            color = rgb(210,138,138);
+            color = "rgb(210,138,138)";
             break;
         case "holiday":
-            color = rgb(169,210,138);
+            color = "rgb(169,210,138)";
              break; 
+        case "sea":
+             color = "rgb(138,173,138)"
         default:
-            color = rgb(129,138,210);
+            color = "rgb(61, 159, 224)";
     }
     return color;
   }

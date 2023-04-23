@@ -4,10 +4,7 @@ import Card from "../components/Card";
 import { getClient } from "../library/sanity-server";
 import groq from "groq";
 
-
-
 const Home = ({ posts }) => {
-  console.log(posts)
   return (
     <main>
       <div className="dashboard">
@@ -20,8 +17,7 @@ const Home = ({ posts }) => {
             <Link
                key={post._id}
                href="/">
-            <Card post={post} 
-            />
+            <Card post={post}/>
             </Link>
           ))}
 
@@ -38,7 +34,7 @@ export const getStaticProps = async ({ preview = false }) => {
         title,
         "username": author->username,
         "categories": categories[]->{id, title},
-        "authorImage" : author ->avatar,
+        "authorImage" : author->avatar,
         body,
         mainImage,
         slug,
@@ -47,7 +43,7 @@ export const getStaticProps = async ({ preview = false }) => {
     return {
       props: {
         posts,
-      }
+      },
     }
 }
 
